@@ -73,7 +73,7 @@
       <nav id="navbar" class="navbar">
         <ul>
           <li><a class="nav-link scrollto" href="home.html">Home</a></li>
-          <li><a class="nav-link scrollto" href="https://sites.google.com/view/nerpm/model-package-download "target=ï¿½_blank">Download</a></li>
+          <li><a class="nav-link scrollto" href="https://sites.google.com/view/nerpm/model-package-download "target=“_blank">Download</a></li>
           <li><a class="nav-link scrollto" href="https://sites.google.com/view/nerpm" target="_blank">User Guide</a></li>
           <li class="dropdown"><a href="#"><span>Model Result</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
@@ -113,7 +113,8 @@
               </li>
             </ul>
           </li>
-        <li><a class="getstarted scrollto" href="https://nerpm-bcc.github.io/2045/ee.html" target="_blank">2045 External Result</a></li>
+		        <li><a class="getstarted scrollto" href="https://nerpm-bcc.github.io/2045/HWY analysis_Subarea.html" target="_blank">2045 HWY Analysis Subarea Result</a></li>
+																																
 
 
         </ul>
@@ -137,7 +138,9 @@
 
   <li><a href="transit summary.html">Transit Summary</a></li>
   
-<li><a href="HWY analysis.html">Volume/Capacity</a></li>	    <li><a href="RMSE Report.html">RMSE</a></li>
+<li><a href="HWY analysis.html">Volume/Capacity</a></li>
+	    <li><a href="HWY analysis_Subarea.html">Volume/Capacity Subarea</a></li>
+	    <li><a href="RMSE Report.html">RMSE</a></li>
 
     <li><a href="HWY validation vc.html">Volume/Count</a></li>
 
@@ -328,7 +331,7 @@
     <script>
 
 var x_county = ['Nassau','Duval','St. Johns','Clay','Baker','Putnam','Total'];
-var y_county=['0.25','0.45','0.39','0.39','0.17','0.23'];
+var y_county=['0.25','0.45','0.39','0.39','0.17','0.23','0.42'];
 
 
 new Chart("myChart_1", {
@@ -651,12 +654,6 @@ new Chart("myChart_2", {
       <td>0.34</td>
     </tr>
     <tr>
-      <td>Transit</td>
-      <td>300,876</td>
-      <td>1,107</td>
-      <td>0.00</td>
-    </tr>
-    <tr>
       <td>Total</td>
       <td>826,911,506</td>
       <td>346,818,350</td>
@@ -678,8 +675,8 @@ new Chart("myChart_2", {
 
     <script>
 
-var ft_x = ['1X','2X','3X','4X','6X','7X','Transit','Total'];
-var ft_y=['0.66','0.48','0.34','0.22','0.25','0.34','0.0','0.42'];
+var ft_x = ['1X','2X','3X','4X','6X','7X','Total'];
+var ft_y=['0.66','0.48','0.34','0.22','0.25','0.34','0.42'];
 
 
 new Chart("myChart_3", {

@@ -36,6 +36,7 @@
 	<script src="https://cdn.jsdelivr.net/npm/chart.js@3.4.0/dist/chart.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.5.1/chart.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/chartjs-plugin-datalabels/2.0.0/chartjs-plugin-datalabels.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
 
   <!--map-->
   	<link rel="stylesheet" href="leaflet/leaflet.css">
@@ -107,7 +108,7 @@
             </ul>
           </li>
 
-        <li><a class="getstarted scrollto" href="https://nerpm-bcc.github.io/2015/transit summary.html" target="_blank">2015 Transit Result</a></li>
+        <li><a class="getstarted scrollto" href="https://nerpm-bcc.github.io/2015/HWY analysis_Subarea.html" target="_blank">2015 HWY Analysis Subarea Result</a></li>
 
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
@@ -151,14 +152,13 @@
       border-collapse: collapse;
     width: 600px;
     }
- td{
+
+        td:nth-child(3) {
           text-align:right;
-
-    }
-        td:nth-child(1) {
-          text-align:center;
 }
-
+        td:nth-child(2) {
+          text-align:right;
+}
 .bd-placeholder-img {
         font-size: 1.125rem;
         text-anchor: middle;
@@ -244,11 +244,9 @@
       <div class="container">
 
         <div class="section-title">
-          <h2>Transit Trips Summary</h2>
+          <h2>Highway Capacity Analysis by County (Subarea)</h2>
           <p></p>
         </div>
-                 <div> <li><a href="#">Note: Walk: Walk to Bus, PNR: Park and Ride, KNR: Kiss and Ride</a></li> </div>
-
 		   <div class="row">
  <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content" id="auto" >
 
@@ -256,126 +254,54 @@
     <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
-      <th>County</th>
-      <th>HBW Walk</th>
-      <th>HBW PNR</th>
-      <th>HBW KNR</th>
-      <th>HBNW Walk</th>
-      <th>HBNW PNR</th>
-      <th>HBNW KNR</th>
-      <th>NHB Walk</th>
-      <th>NHB PNR</th>
-      <th>NHB KNR</th>
-      <th>Walk Total</th>
-      <th>PNR Total</th>
-      <th>KNR Total</th>
+      <th>COUNTY</th>
+      <th>Capacity</th>
+      <th>Volume</th>
+      <th>Volume/Capacity</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <td>Nassau</td>
-      <td>9</td>
-      <td>0</td>
-      <td>0</td>
-      <td>13</td>
-      <td>1</td>
-      <td>0</td>
-      <td>28</td>
-      <td>4</td>
-      <td>2</td>
-      <td>51</td>
-      <td>6</td>
-      <td>2</td>
+      <td>57,286,117</td>
+      <td>17,072,612</td>
+      <td>0.30</td>
     </tr>
     <tr>
       <td>Duval</td>
-      <td>5,508</td>
-      <td>41</td>
-      <td>68</td>
-      <td>2,213</td>
-      <td>8</td>
-      <td>18</td>
-      <td>4,541</td>
-      <td>28</td>
-      <td>227</td>
-      <td>12,264</td>
-      <td>78</td>
-      <td>314</td>
+      <td>638,388,099</td>
+      <td>339,329,871</td>
+      <td>0.53</td>
     </tr>
     <tr>
       <td>St. Johns</td>
-      <td>210</td>
-      <td>2</td>
-      <td>1</td>
-      <td>195</td>
-      <td>1</td>
-      <td>1</td>
-      <td>330</td>
-      <td>6</td>
-      <td>2</td>
-      <td>736</td>
-      <td>10</td>
-      <td>5</td>
+      <td>92,356,641</td>
+      <td>55,055,475</td>
+      <td>0.60</td>
     </tr>
     <tr>
       <td>Clay</td>
-      <td>282</td>
-      <td>3</td>
-      <td>1</td>
-      <td>200</td>
-      <td>0</td>
-      <td>0</td>
-      <td>726</td>
-      <td>2</td>
-      <td>3</td>
-      <td>1,210</td>
-      <td>6</td>
-      <td>5</td>
+      <td>92,096,151</td>
+      <td>43,785,821</td>
+      <td>0.48</td>
     </tr>
     <tr>
       <td>Baker</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
+      <td>14,689,412</td>
+      <td>3,350,891</td>
+      <td>0.23</td>
     </tr>
     <tr>
       <td>Putnam</td>
-      <td>119</td>
-      <td>0</td>
-      <td>3</td>
-      <td>197</td>
-      <td>0</td>
-      <td>4</td>
-      <td>317</td>
-      <td>0</td>
-      <td>27</td>
-      <td>634</td>
-      <td>0</td>
-      <td>35</td>
+      <td>24,036,016</td>
+      <td>5,864,557</td>
+      <td>0.24</td>
     </tr>
     <tr>
-      <td>External</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
+      <td>Total</td>
+      <td>918,852,436</td>
+      <td>464,459,230</td>
+      <td>0.51</td>
     </tr>
   </tbody>
 </table></div>
@@ -384,70 +310,69 @@
 								   
 <div class="col-lg-6 pt-4 pt-lg-0 order-1 order-lg-1 content" id="barchart_PANDAS" style="width:600px">
 
-      <h4 style="padding: 5px 0;color:black;font-size:20"><span>
+		       <h4 style="padding: 5px 0;color:black;font-size:20"><span>
     </span></h4>
-		
-    <canvas id="bar-chart2" ></canvas>
+    <canvas id="myChart_1" ></canvas>
     </div> 
 
     <script>
 
-var all2_sovp = ['51','12264','736','1210','0','634'];
-var all2_hov2p=['6','78','10','6','0','0'];
-var all2_sov3p=['2','314','5','5','0','35'];
+var x_county = ['Nassau','Duval','St. Johns','Clay','Baker','Putnam','Total'];
+var y_county=['0.3','0.53','0.6','0.48','0.23','0.24','0.51'];
 
-new Chart(document.getElementById("bar-chart2"), {
-    type: 'bar',
-    data: {
-      labels: ["Nassau", "Duval", "St. Johns","Clay","Baker","Putnam"],
-      datasets: [
-        {
-          label: "Walk",
-          backgroundColor: "#6C8D9C",
-          data: all2_sovp
-        }, {
-          label: "PNR",
-          backgroundColor: "#f3a27c",
-          data: all2_hov2p
-        }, {
-          label: "KNR",
-          backgroundColor: "#d37995",
-          data: all2_sov3p
+
+new Chart("myChart_1", {
+  type: "bar",
+  data: {
+	labels:x_county,
+    datasets: [{
+      data: y_county,
+        backgroundColor:"#92B6C7",
+    }]
+
+  },
+  bar: {
+        width: {
+            ratio: 0.5 
         }
-      ]
+        
     },
-    options: {
-      scales:{
-        x: {
-            ticks: {
-                font: {
-                    size: 10,
-                }
-            }
-        },
-        y: {
-            ticks: {
-                font: {
-                    size: 10,
-                }
-            }
-        }
-      },
-      plugins:{
-        legend:{
-           position:"bottom",
-          display:true,
-          labels:{
-            font:{
-              size:8
+  options: {
+    legend: {display: false},
+    scales: {
+                    xAxes: [{
+                            display: true,
+                            scaleLabel: {
+                                display: false
+                            }
+                        }],
+                    yAxes: [{
+                            display: true,
+                            ticks: {
+                                beginAtZero: true,
+
+                                max: 1
+                            }
+                        }]
+                },
+  
+  },
+
+  plugins: {
+      datalabels: {
+        color: 'blue',
+        anchor: 'end',
+        align: 'right',
+        labels: {
+          title: {
+            font: {
+              weight: 'bold'
             }
           }
-
         }
       }
-    }
+    },
 });
-
 
  </script>
  </section>
@@ -457,10 +382,9 @@ new Chart(document.getElementById("bar-chart2"), {
       <div class="container">
 
         <div class="section-title">
-          <h2>Transit Assignment by Operator</h2>
+          <h2>Highway Capacity Analysis by Area Type (Subarea)</h2>
           <p></p>
         </div>
-
 		   <div class="row">
  <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content" id="auto" >
 
@@ -468,78 +392,120 @@ new Chart(document.getElementById("bar-chart2"), {
     <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
-      <th>Operator</th>
-      <th>Passenger Trips(OP)</th>
-      <th>Pass.Mi(OP)</th>
-      <th>Pass.Hr(OP)</th>
-      <th>Passenger Trips(PK)</th>
-      <th>Pass.Mi(PK)</th>
-      <th>Pass.Hr(PK)</th>
+      <th>AT_DESCRIPTION</th>
+      <th>Capacity</th>
+      <th>Volume</th>
+      <th>Volume/Capacity</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td>JTA Local Bus</td>
-      <td>3,429</td>
-      <td>38,588</td>
-      <td>1,205</td>
-      <td>4,933</td>
-      <td>64,682</td>
-      <td>1,993</td>
+      <td>11: Urbanized Area (over 500,000) Primary City Central Business District 5</td>
+      <td>31,560,821</td>
+      <td>11,721,726</td>
+      <td>0.37</td>
     </tr>
     <tr>
-      <td>JTA express bus</td>
-      <td>67</td>
-      <td>1,033</td>
-      <td>25</td>
-      <td>22</td>
-      <td>475</td>
-      <td>14</td>
+      <td>12: Urbanized Area (under 500,000) Primary City Central Business District 4</td>
+      <td>2,857,193</td>
+      <td>2,140,856</td>
+      <td>0.75</td>
     </tr>
     <tr>
-      <td>JTA BRT Bus</td>
-      <td>3,880</td>
-      <td>53,406</td>
-      <td>1,576</td>
-      <td>4,038</td>
-      <td>58,053</td>
-      <td>1,725</td>
+      <td>13: Other Urbanized Area Central Business District and Small City Downtown 4</td>
+      <td>639,912</td>
+      <td>25,204</td>
+      <td>0.04</td>
     </tr>
     <tr>
-      <td>JTA Commuter Rail</td>
-      <td>32</td>
-      <td>989</td>
-      <td>6</td>
-      <td>30</td>
-      <td>794</td>
-      <td>5</td>
+      <td>14: Non-Urbanized Area Small City Downtown 4</td>
+      <td>2,602,530</td>
+      <td>1,214,625</td>
+      <td>0.47</td>
     </tr>
     <tr>
-      <td>JTA Trolley</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
+      <td>21: Central Business District Fringe Areas 3</td>
+      <td>88,400,906</td>
+      <td>48,278,207</td>
+      <td>0.55</td>
     </tr>
     <tr>
-      <td>JTA Skyway</td>
-      <td>357</td>
-      <td>1,098</td>
-      <td>39</td>
-      <td>359</td>
-      <td>1,131</td>
-      <td>42</td>
+      <td>22: Industrial Fringe 3</td>
+      <td>19,124,746</td>
+      <td>8,565,412</td>
+      <td>0.45</td>
+    </tr>
+    <tr>
+      <td>23: Strip Commercial 3</td>
+      <td>69,951,136</td>
+      <td>43,374,947</td>
+      <td>0.62</td>
+    </tr>
+    <tr>
+      <td>31: Residential Area of Urbanized Areas 1</td>
+      <td>441,334,095</td>
+      <td>227,680,798</td>
+      <td>0.52</td>
+    </tr>
+    <tr>
+      <td>32: Undeveloped Portions of Urbanized Areas 1</td>
+      <td>15,297,582</td>
+      <td>9,149,082</td>
+      <td>0.60</td>
+    </tr>
+    <tr>
+      <td>33: Transitioning Areas/Urban Areas over 5,000 Population 1</td>
+      <td>54,793,629</td>
+      <td>26,739,217</td>
+      <td>0.49</td>
+    </tr>
+    <tr>
+      <td>34: Beach Residential 2</td>
+      <td>14,078,823</td>
+      <td>7,632,009</td>
+      <td>0.54</td>
+    </tr>
+    <tr>
+      <td>35: St. Johns River Bridges 1</td>
+      <td>8,257,364</td>
+      <td>7,847,744</td>
+      <td>0.95</td>
+    </tr>
+    <tr>
+      <td>41: High Density Outlying Business District 2</td>
+      <td>25,023,999</td>
+      <td>15,375,750</td>
+      <td>0.61</td>
+    </tr>
+    <tr>
+      <td>42: Other Outlying Business District 2</td>
+      <td>33,527,540</td>
+      <td>23,383,529</td>
+      <td>0.70</td>
+    </tr>
+    <tr>
+      <td>43: Beach Outlying Business District 3</td>
+      <td>12,573,722</td>
+      <td>8,132,948</td>
+      <td>0.65</td>
+    </tr>
+    <tr>
+      <td>51: Developed Rural Areas/Small Cities under 5,000 Population 1</td>
+      <td>17,972,673</td>
+      <td>5,875,591</td>
+      <td>0.33</td>
+    </tr>
+    <tr>
+      <td>52: Undeveloped Rural Areas 1</td>
+      <td>80,855,765</td>
+      <td>17,321,577</td>
+      <td>0.21</td>
     </tr>
     <tr>
       <td>Total</td>
-      <td>7,767</td>
-      <td>95,117</td>
-      <td>2,852</td>
-      <td>9,383</td>
-      <td>125,137</td>
-      <td>3,781</td>
+      <td>918,852,436</td>
+      <td>464,459,230</td>
+      <td>0.51</td>
     </tr>
   </tbody>
 </table></div>
@@ -547,68 +513,217 @@ new Chart(document.getElementById("bar-chart2"), {
 									   
 <div class="col-lg-6 pt-4 pt-lg-0 order-1 order-lg-1 content" id="barchart_PANDAS" style="width:600px">
 
-      <h4 style="padding: 5px 0;color:black;font-size:20"><span>
+           <h4 style="padding: 5px 0;color:black;font-size:20"><span>
     </span></h4>
-
 																						
 				
-    <canvas id="bar-chart3" ></canvas>
+    <canvas id="myChart_2" height="400" ></canvas>
     </div> 
 
     <script>
 
-var all2_sovp = ['3429','67','3880','32'];
-var all2_hov2p=['4933','22','4038','30'];
+var at_x = ['11','12','13','14','21','22','23','31','32','33','34','35','41','42','43','51','52','Total'];
+var at_y=['0.37','0.75','0.04','0.47','0.55','0.45','0.62','0.52','0.6','0.49','0.54','0.95','0.61','0.7','0.65','0.33','0.21','0.51'];
 
 
-new Chart(document.getElementById("bar-chart3"), {
-    type: 'bar',
-    data: {
-      labels: ["JTA Local Bus", "JTA Express Bus", "JTA BRT Bus","JTA Skyway"],
-      datasets: [
-        {
-          label: "Off Peak",
-          backgroundColor: "#6C8D9C",
-          data: all2_sovp
-        }, {
-          label: "Peak",
-          backgroundColor: "#f3a27c",
-          data: all2_hov2p
+new Chart("myChart_2", {
+  type: "horizontalBar",
+  data: {
+	labels:at_x,
+    datasets: [{
+      data: at_y,
+        backgroundColor:"#92B6C7",
+    }]
+
+  },
+  bar: {
+        width: {
+            ratio: 0.5 
         }
-      ]
+        
     },
-    options: {
-      scales:{
-        x: {
-            ticks: {
-                font: {
-                    size: 10,
-                }
-            }
-        },
-        y: {
-            ticks: {
-                font: {
-                    size: 10,
-                }
-            }
-        }
-      },
-      plugins:{
-        legend:{
-           position:"bottom",
-          display:true,
-          labels:{
-            font:{
-              size:8
+  options: {
+    legend: {display: false},
+    scales: {
+                    xAxes: [{
+                            display: true,
+                            scaleLabel: {
+                                display: false
+                            }
+                        }],
+                    yAxes: [{
+                            display: true,
+                            ticks: {
+                                beginAtZero: true,
+
+                                max: 1
+                            }
+                        }]
+                },
+  
+  },
+
+  plugins: {
+      datalabels: {
+        color: 'blue',
+        anchor: 'end',
+        align: 'right',
+        labels: {
+          title: {
+            font: {
+              weight: 'bold'
             }
           }
-
         }
       }
-    }
+    },
 });
 
+ </script>
+ </section>
+
+<!-- ======= About Us Section ======= -->
+    <section id="about" class="about">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Highway Capacity Analysis by Facility Type (Subarea)</h2>
+          <p></p>
+        </div>
+		   <div class="row">
+ <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content" id="auto" >
+
+	<table style ="width:150%">
+    <table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>FT_DESCRIPTION</th>
+      <th>Capacity</th>
+      <th>Volume</th>
+      <th>Volume/Capacity</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>10: Freeways and Expressways (FT 10 is default)</td>
+      <td>207,872,180</td>
+      <td>143,146,301</td>
+      <td>0.69</td>
+    </tr>
+    <tr>
+      <td>20: Divided Arterials</td>
+      <td>291,420,192</td>
+      <td>170,613,186</td>
+      <td>0.59</td>
+    </tr>
+    <tr>
+      <td>30: Undivivided Arterials</td>
+      <td>132,531,336</td>
+      <td>52,925,672</td>
+      <td>0.40</td>
+    </tr>
+    <tr>
+      <td>40: Collectors</td>
+      <td>223,922,442</td>
+      <td>70,240,913</td>
+      <td>0.31</td>
+    </tr>
+    <tr>
+      <td>60: One-Way Facilities</td>
+      <td>15,079,523</td>
+      <td>4,370,646</td>
+      <td>0.29</td>
+    </tr>
+    <tr>
+      <td>70: Ramps</td>
+      <td>34,720,410</td>
+      <td>14,692,768</td>
+      <td>0.42</td>
+    </tr>
+    <tr>
+      <td>90: Toll Facilities</td>
+      <td>13,005,477</td>
+      <td>8,468,865</td>
+      <td>0.65</td>
+    </tr>
+    <tr>
+      <td>Total</td>
+      <td>918,852,436</td>
+      <td>464,459,230</td>
+      <td>0.51</td>
+    </tr>
+  </tbody>
+</table></div>
+					
+									   
+<div class="col-lg-6 pt-4 pt-lg-0 order-1 order-lg-1 content" id="barchart_PANDAS" style="width:600px">
+
+           <h4 style="padding: 5px 0;color:black;font-size:20"><span>
+    </span></h4>
+
+																						
+				
+    <canvas id="myChart_3" ></canvas>
+    </div> 
+
+    <script>
+
+var ft_x = ['10','20','30','40','60','70','90','Total'];
+var ft_y=['0.69','0.59','0.4','0.31','0.29','0.42','0.65','0.51'];
+
+
+new Chart("myChart_3", {
+  type: "bar",
+  data: {
+	labels:ft_x,
+    datasets: [{
+      data: ft_y,
+        backgroundColor:"#92B6C7",
+    }]
+
+  },
+  bar: {
+        width: {
+            ratio: 0.5 
+        }
+        
+    },
+  options: {
+    legend: {display: false},
+    scales: {
+                    xAxes: [{
+                            display: true,
+                            scaleLabel: {
+                                display: false
+                            }
+                        }],
+                    yAxes: [{
+                            display: true,
+                            ticks: {
+                                beginAtZero: true,
+
+                                max: 1
+                            }
+                        }]
+                },
+  
+  },
+
+  plugins: {
+      datalabels: {
+        color: 'blue',
+        anchor: 'end',
+        align: 'right',
+        labels: {
+          title: {
+            font: {
+              weight: 'bold'
+            }
+          }
+        }
+      }
+    },
+});
 
  </script>
  

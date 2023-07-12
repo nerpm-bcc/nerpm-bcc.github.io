@@ -73,7 +73,7 @@
       <nav id="navbar" class="navbar">
         <ul>
           <li><a class="nav-link scrollto" href="home.html">Home</a></li>
-          <li><a class="nav-link scrollto" href="https://sites.google.com/view/nerpm/model-package-download "target=ï¿½_blank">Download</a></li>
+          <li><a class="nav-link scrollto" href="https://sites.google.com/view/nerpm/model-package-download "target=“_blank">Download</a></li>
           <li><a class="nav-link scrollto" href="https://sites.google.com/view/nerpm" target="_blank">User Guide</a></li>
           <li class="dropdown"><a href="#"><span>Model Result</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
@@ -137,11 +137,12 @@
 
   <li><a href="transit summary.html">Transit Summary</a></li>
   
-<li><a href="HWY analysis.html">Volume/Capacity</a></li>	    <li><a href="RMSE Report.html">RMSE</a></li>
+<li><a href="HWY analysis.html">Volume/Capacity</a></li>
+	    <li><a href="HWY analysis_Subarea.html">Volume/Capacity Subarea</a></li>
+	    <li><a href="RMSE Report.html">RMSE</a></li>
 
     <li><a href="HWY validation vc.html">Volume/Count</a></li>
 
-	    <li><a href="HWY analysis_Subarea.html">Volume/Capacity Subarea</a></li>
 
     <li><a href="HWY validation vc Subarea.html">Volume/Count Subarea</a></li>        </ol>
         </div>
@@ -327,8 +328,8 @@
 
     <script>
 
-var x_county = ['Nassau', 'Duval', 'St. Johns', 'Clay', 'Baker', 'Putnam'];
-var y_county=['0.25','0.45','0.39','0.39','0.17','0.23'];
+var x_county = ['Nassau', 'Duval', 'St. Johns', 'Clay', 'Baker', 'Putnam', 'Total'];
+var y_county=['0.25','0.45','0.39','0.39','0.17','0.23','0.42'];
 
 
 new Chart("myChart_1", {
@@ -649,8 +650,8 @@ new Chart("myChart_2", {
     </tr>
     <tr>
       <td>Total</td>
-      <td>826,911,506</td>
-      <td>346,818,350</td>
+      <td>826,610,630</td>
+      <td>346,817,242</td>
       <td>0.42</td>
     </tr>
   </tbody>
@@ -668,8 +669,8 @@ new Chart("myChart_2", {
 
     <script>
 
-var ft_x = ['1X','2X','3X','4X','6X','7X','Transit','Total'];
-var ft_y=['0.66','0.48','0.34','0.22','0.25','0.34','0.0','0.42'];
+var ft_x = ['1X','2X','3X','4X','6X','7X','Total'];
+var ft_y=['0.66','0.48','0.34','0.22','0.25','0.34','0.42'];
 
 
 new Chart("myChart_3", {
