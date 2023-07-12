@@ -50,7 +50,7 @@
   <header id="header" class="d-flex align-items-center">
     <div class="container d-flex align-items-center">
 
-      <h1 class="logo me-auto"><a href="#">NERPM 4-Step Model Year 2045</a></h1>
+      <h1 class="logo me-auto"><a href="#">NERPM 4-Step Model Year 2015</a></h1>
       <!-- Uncomment below if you prefer to use an image logo -->
       <!-- <a href="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
 
@@ -80,20 +80,27 @@
 
                 </ul>
               </li>
-			  	   <li class="dropdown"><a href="transit summary.html"><span>Transit Summary</span> </a>
+			  	   <li class="dropdown"><a href="transit summary.html"><span>Tansit Summary</span> </a>
 
               </li>
 			   <li class="dropdown"><a href="#"><span>Highway Analysis</span> <i class="bi bi-chevron-right"></i></a>
 
 				<ul>
                   <li><a href="HWY analysis.html">Volume/Capacity</a></li>
-				  <li><a href="HWY analysis_SelectedLink.html">Volume/Capacity Subarea</a></li>
+				  <li><a href="HWY analysis_Subarea.html">Volume/Capacity Subarea</a></li>
                 </ul>
               </li>
-</ul>
-	          <li><a class="getstarted scrollto" href="https://nerpm-bcc.github.io/2015/home.html" target="_blank">2015 Model Result</a></li>
+			  <li class="dropdown"><a href="#"><span>Highway Validation</span> <i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="RMSE Report.html">RMSE</a></li>
+                  <li><a href="HWY validation vc.html">Volume/Count</a></li>
+				  <li><a href="HWY validation vc Subarea.html">Volume/Count Subarea</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
 
-		
+        <li><a class="getstarted scrollto" href="https://nerpm-bcc.github.io/2045/home.html" target="_blank">2045 Model Result</a></li>
 
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
@@ -135,7 +142,7 @@
             <div class="icon-box">
               <div class="icon"><i class="bi bi-download"></i></div>
               <h4 class="title"><a href="https://sites.google.com/view/nerpm/model-package-download "target=“_blank">Model Download</a></h4>
-              <p class="description">User can download Model from OneDrive</p>
+              <p class="description">User can download Model from Google Drive</p>
 
             </div>
           </div>
@@ -178,7 +185,7 @@
               
             </p>
             <ul>
-              <li><i class="bi bi-check-circled"></i><a href="https://sites.google.com/view/nerpm/model-package-download"target=“_blank">1. Download model from OneDrive</a></li>
+              <li><i class="bi bi-check-circled"></i><a href="https://sites.google.com/view/nerpm/model-package-download"target=“_blank">1. Download model from Google Drive</a></li>
 
               <li><i class="bi bi-check-circled"></i>2. Save the file under “C:\FSUTMS\D2”</li>
               <li><i class="bi bi-check-circled"></i>3. Right-click the file and click “Extract All”</li>
@@ -305,6 +312,7 @@
               <li data-filter=".filter-mc">Mode Choice</li>
 			  <li data-filter=".filter-trn">Transit</li>
 			  <li data-filter=".filter-an">Highway Analysis</li>
+			  <li data-filter=".filter-vc">Highway Assignment</li>
 
             </ul>
           </div>
@@ -506,7 +514,75 @@
             </div>
           </div>
 		  
-		 
+		  <div class="col-lg-4 col-md-6 portfolio-item filter-vc">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/vc1.png" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Highway Validation</h4>
+                <p>Volume/Count by County</p>
+                <div class="portfolio-links">
+                  <a href="assets/img/portfolio/an3.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 1"><i class="bx bx-plus"></i></a>
+                  <a href="HWY validation vc.html" title="More Details"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+		  
+		  	<div class="col-lg-4 col-md-6 portfolio-item filter-vc">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/vc1.png" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Highway Validation</h4>
+                <p>Volume/Count by County</p>
+                <div class="portfolio-links">
+                  <a href="assets/img/portfolio/vc1.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 1"><i class="bx bx-plus"></i></a>
+                  <a href="HWY validation vc.html" title="More Details"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+		  	<div class="col-lg-4 col-md-6 portfolio-item filter-vc">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/vc2.png" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Highway Validation</h4>
+                <p>Volume/Count by Area Type</p>
+                <div class="portfolio-links">
+                  <a href="assets/img/portfolio/vc2.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 1"><i class="bx bx-plus"></i></a>
+                  <a href="HWY validation vc.html" title="More Details"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+		  
+		  		  	<div class="col-lg-4 col-md-6 portfolio-item filter-vc">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/vc3.png" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Highway Validation</h4>
+                <p>Volume/Count by Facility Type</p>
+                <div class="portfolio-links">
+                  <a href="assets/img/portfolio/vc3.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 1"><i class="bx bx-plus"></i></a>
+                  <a href="HWY validation vc.html" title="More Details"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+		  
+		  		  		  	<div class="col-lg-4 col-md-6 portfolio-item filter-vc">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/RMSE.png" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Highway Validation</h4>
+                <p>RMSEe</p>
+                <div class="portfolio-links">
+                  <a href="assets/img/portfolio/RMSE.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 1"><i class="bx bx-plus"></i></a>
+                  <a href="RMSE Report.html" title="More Details"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
 
       </div>
     </section><!-- End Portfolio Section -->
