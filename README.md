@@ -10,4 +10,4 @@
 
   
 [Model Package Download](https://sites.google.com/view/nerpm/model-package-download)  
-[NERPM VISUM Model User Guide](https://sites.google.com/view/nerpm)  
+[NERPM VISUM Model User Guide](https://sites.google.com/view/nerpm2020)  
